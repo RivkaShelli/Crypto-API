@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="title parallax mb-5">
+        <h1 class="p-5">Cryptonite</h1>
+    </div>
+    <main class="container">
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check btn-lg" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-light me-2 rounded btn-lg" for="btnradio1" id="home">Home</label>
+
+            <input type="radio" class="btn-check btn-lg" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-light me-2 rounded btn-lg" for="btnradio2" id="reports">Live Reports</label>
+
+            <input type="radio" class="btn-check btn-lg" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-light me-2 rounded btn-lg" for="btnradio3" id="about">About</label>
+
+            <input type="text" placeholder="Search" class="a rounded btn-lg" id="search-input">
+            <button class="btn btn-outline-light rounded a btn-lg" id="search">Search</button>
+            
+        </div>
+        
+        <div id="coins" class="row mt-4"></div>
+
+    </main>
+
+    <!-- My Modal--> >
+    
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Oops .. there is a problem</h5>
+                </div>
+                <p class="m-3">You can only select 5 coins for tracking. Remove one of the coins you have already selected or click Cancel</p>
+                <div class="modal-body" id="m-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
